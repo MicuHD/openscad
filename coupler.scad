@@ -1,0 +1,15 @@
+difference(){
+    cylinder(r=6,h=20);
+    cylinder(r=2.5,h=6,$fn=30);
+    translate([0,0,6]){
+        cylinder(r=3,h=14,$fn=20);
+    }
+    rotate([0,90,0]){
+        translate([-3,0,0]){
+            #cylinder(r=1.4,h=6,center=false,$fn=20);
+        }
+        translate([-17,0,0]){
+            #cylinder(r=1.4,h=6,center=false,$fn=20);
+        }
+    }
+}

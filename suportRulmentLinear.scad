@@ -1,45 +1,57 @@
 difference(){
     union(){
-        cube([30,38,6]);
-        translate([0,4,6]){
+        cube([38,36,6]);
+        translate([4,3,6]){
             cube([30,10,20]);
         }
-        translate([0,24,6]){
+        translate([4,23,6]){
             cube([30,10,20]);
+        }
+        translate([0,3,6]){
+            cube([38,10,8]);
+        }
+        translate([0,23,6]){
+            cube([38,10,8]);
         }
         
     }
     rotate(a=[270,0,0]){
-        translate([5,-13,0]){
-            cylinder(r=2,h=38);
+        translate([9,-13,0]){
+    #        cylinder(r=2,h=38,$fn=20);
         }
-        translate([25,-13,0]){
-            cylinder(r=2,h=38);
+        translate([29,-13,0]){
+            cylinder(r=2,h=38,$fn=20);
         }
-        translate([5,-21,0]){
-            cylinder(r=2,h=38);
+        translate([9,-21,0]){
+            cylinder(r=2,h=38,$fn=20);
         }
-        translate([25,-21,0]){
-            cylinder(r=2,h=38);
+        translate([29,-21,0]){
+            cylinder(r=2,h=38,$fn=20);
         }
-        translate([2.45,-9.2,0]){
-            cube([7.1,3.2,38]);
+        translate([3.45,-9.2,0]){
+            cube([7.1,3.4,38]);
         }
         
-        translate([20.45,-9.2,0]){
-            cube([7.1,3.2,38]);
-        }}
+        translate([27.45,-9.2,0]){
+            cube([7.1,3.4,38]);
+        }
     }
-    translate([6,7,0]){
-        cylinder(r=2,h=6);
+    
+    translate([7,9,0]){
+        cylinder(r=2,h=6,$fn=20);
     }
-    translate([24,7,0]){
-        cylinder(r=2,h=6);
+    translate([31,9,0]){
+        cylinder(r=2,h=6,$fn=20);
     }
-    translate([6,31,0]){
-        cylinder(r=2,h=6);
+    translate([7,27,0]){
+        cylinder(r=2,h=6,$fn=20);
     }
-    translate([24,31,0]){
-        cylinder(r=2,h=6);
+    translate([31,27,0]){
+        cylinder(r=2,h=6,$fn=20);
+    }
+    translate([19,0,28]){
+            rotate(a=[270,0,0]){
+                #cylinder(r=5,h=38);
+            }
     }
 }
